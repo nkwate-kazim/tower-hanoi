@@ -10,7 +10,7 @@ tower_hanoi()
       tower_hanoi "$(($1-1))" $4 $3 $2
     fi
 }
-printf "Towers of Hanoi. How many disks? "
+printf "Towers of Hanoi. Starting disks? "
 read disks
 tower_hanoi $disks 1 2 3
 echo "It has taken $moves moves to solve Towers for $disks disks."
